@@ -10,7 +10,7 @@ dependencies: ["react-query-chart-data"]
 ---
 
 ## Rationale
-The main analysis page has grown into a 1,500-line “god component” mixing data orchestration, URL syncing, correlation logic, explanation rendering, CSV export, FLIP animations, and mobile layout concerns. This violates the layered approach described in docs/frontend/overview.md and makes the MVP hard to evolve.
+The main analysis page has grown into a 1,500-line “god component”  mixing data orchestration, URL syncing, correlation logic, explanation rendering, CSV export, FLIP animations, and mobile layout concerns. This violates the layered approach described in docs/frontend/overview.md and makes the MVP hard to evolve.
 
 ## Evidence
 - `src/pages/ChartExplorer.tsx` weighs in at 1,514 lines (`wc -l`), with long `useEffect` chains handling fetch planning (`src/pages/ChartExplorer.tsx:99`-`src/pages/ChartExplorer.tsx:366`) and large JSX trees (`src/pages/ChartExplorer.tsx:1000`+).
