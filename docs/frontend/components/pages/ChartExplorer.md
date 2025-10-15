@@ -25,5 +25,5 @@
 ## Usage Notes
 - Data cache invalidation relies on tracking removed variables; when extending query state make sure to clear associated entries so stale charts disappear.
 - `Promise.all` returns `readonly` tuples, which currently surface as a TS2345 during Typedoc builds. TODO: adjust the `planResults` spread (`allFetchResults.push(...planResults as [string, VDemDataPoint[]][])`) or refactor to mutable arrays so docs generation succeeds.
-- The incremental loader logs fetch plans to the console (`🔄 Incremental loading analysis`); keep this logging lightweight or gate behind `import.meta.env.DEV` if performance becomes a concern.
+- The incremental loader logs fetch plans to the console (`Incremental loading analysis`); keep this logging lightweight or gate behind `import.meta.env.DEV` if performance becomes a concern.
 - When adding new query dimensions (e.g., smoothing, normalization) ensure they are encoded/decoded in `url-state.ts` so share links capture the full state.
