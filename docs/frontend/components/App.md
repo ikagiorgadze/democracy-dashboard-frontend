@@ -21,4 +21,4 @@
 
 ## Usage Notes
 - Because `handleQueryChange` sets `currentQuery` and manipulates the router, ensure upstream callers pass complete `QueryState` snapshots (not partial diffs).
-- When adding new routes, update both the `Routes` block and documentation in `docs/ai/frontend/routing.md`.
+- When adding new routes, update both the `Routes` block and documentation in `docs/frontend/routing.md`.

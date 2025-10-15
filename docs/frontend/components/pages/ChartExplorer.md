@@ -2,7 +2,7 @@
 
 ## Purpose
 - Main analytical surface for comparing democracy and economic indicators across countries.
-- Orchestrates data fetching, chart rendering, correlation analysis, AI explanation overlays, and sharing workflows tied to the URL-driven `QueryState`.
+- Orchestrates data fetching, chart rendering, correlation analysis, explanation overlays, and sharing workflows tied to the URL-driven `QueryState`.
 
 ## Key Interactions
 - Reads and writes URL search params via `useSearchParams`; every `onQueryChange` call mirrors state into the browser history so deep links stay stable.

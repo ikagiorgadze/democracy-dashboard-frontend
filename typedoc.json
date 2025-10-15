@@ -1,0 +1,9 @@
+{
+  "entryPoints": ["src/index.tsx", "src/main.tsx", "src/**/*.ts", "src/**/*.tsx"],
+  "tsconfig": "tsconfig.json",
+  "plugin": ["typedoc-plugin-markdown"],
+  "readme": "none",
+  "hideGenerator": true,
+  "categorizeByGroup": false,
+  "out": "docs/typedoc"
+}
