@@ -1,5 +1,6 @@
 Deployment on EC2 (Ubuntu) – Frontend
 
+
 Overview
 - Vite React app built into static files
 - Served by Nginx from /var/www/vd-frontend
